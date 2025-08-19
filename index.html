@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abaca-Project</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Latest Font Awesome 6 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-  <title>Responsive Header</title>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
     </section>
 
     <section class="about-section">
-      <div class="about-container">
+      <div class="about-container container">
 
         <!-- Left Content -->
         <div class="about-text">
@@ -102,7 +104,7 @@
     </section>
 
     <section class="mission-section">
-      <div class="mission-container">
+      <div class="mission-container container">
 
         <p class="about-tag">&gt;&gt;&gt;&gt;</p>
 
@@ -120,7 +122,7 @@
 
     <!-- Services Section -->
     <section class="services-section">
-      <div class="services-container">
+      <div class="services-container container">
 
         <!-- Section Heading -->
         <div class="services-header">
@@ -182,36 +184,156 @@
       </div>
 
     </section>
+    <!-- Tagline with centered line -->
     <div class="partners-tagline-wrapper">
       <div class="partners-tagline">
-       <div class="partners-des">
-        <i class="fa-solid fa-circle-check"></i> 
-       <span>Discover your brilliance and live your full potential daily.</span>
-       </div>
+        <div class="partners-des">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Discover your brilliance and live your full potential daily.</span>
+        </div>
       </div>
     </div>
     <!-- partners-section -->
     <section class="partners-section">
 
+      <!-- Swiper Carousel -->
       <div class="carousel">
-        <div class="carousel-track">
-          <!-- Logos -->
-          <img src="https://dummyimage.com/120x50/000/fff&text=Logiclabs" alt="Logiclabs">
-          <img src="https://dummyimage.com/120x50/333/fff&text=Bloomly" alt="Bloomly">
-          <img src="https://dummyimage.com/120x50/900/fff&text=ABACA" alt="ABACA">
-          <img src="https://dummyimage.com/120x50/555/fff&text=Digancy" alt="Digancy">
-          <img src="https://dummyimage.com/120x50/900/fff&text=ABACA+ERP" alt="ABACA ERP">
-          <img src="https://dummyimage.com/120x50/666/fff&text=Femmous" alt="Femmous">
-
-          <!-- Duplicate logos for smooth loop -->
-          <img src="https://dummyimage.com/120x50/000/fff&text=Logiclabs" alt="Logiclabs">
-          <img src="https://dummyimage.com/120x50/333/fff&text=Bloomly" alt="Bloomly">
-          <img src="https://dummyimage.com/120x50/900/fff&text=ABACA" alt="ABACA">
-          <img src="https://dummyimage.com/120x50/555/fff&text=Digancy" alt="Digancy">
-          <img src="https://dummyimage.com/120x50/900/fff&text=ABACA+ERP" alt="ABACA ERP">
-          <img src="https://dummyimage.com/120x50/666/fff&text=Femmous" alt="Femmous">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/image/aim-logo.png" alt="Abaca Aim">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/launch-pad.png" alt="Launch Pad">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/precision-logo.png" alt="Abaca Precision">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/system-logo.png" alt="Abaca System">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/aim-logo.png" alt="Abaca Aim">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/launch-pad.png" alt="Launch Pad">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/precision-logo.png" alt="Abaca Precision">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/system-logo.png" alt="Abaca System">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/aim-logo.png" alt="Abaca Aim">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/launch-pad.png" alt="Launch Pad">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/precision-logo.png" alt="Abaca Precision">
+            </div>
+            <div class="swiper-slide">
+              <img src="/image/system-logo.png" alt="Abaca System">
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="program-hero-section">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-8">
+            <div class="program-content">
+              <h1 class="porgram-title">
+                Programs to Help You<br>
+                Move Forward
+              </h1>
+              <p class="program-text">
+                Whether you're building something new or upgrading what already exists, my programs are designed to help
+                you move forward with clarity, speed, and the right strategy.
+              </p>
+              <a href="#" class="consultation-btn">Book a Free Consultation</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="stats-section">
+        <div class="container">
+          <div class="row mx-auto align-items-center">
+            <div class="col-12 col-sm-3 col-lg-3">
+              <h5 class="stats-title">My work has<br>impacted over</h2>
+            </div>
+            <div class="stat-item col-12 col-sm-2 col-lg-2">
+              <div class="stat-number">27K+</div>
+              <div class="stat-label">Client Success</div>
+            </div>
+
+            <div class="stat-item col-12 col-sm-2 col-lg-2">
+              <div class="stat-number">1,000+</div>
+              <div class="stat-label">Training Programs</div>
+            </div>
+
+            <div class="stat-item col-12 col-sm-2 col-lg-2">
+              <div class="stat-number">16+</div>
+              <div class="stat-label">Country Visited</div>
+            </div>
+
+            <div class="stat-item col-12 col-sm-2 col-lg-2">
+              <div class="stat-number">4.7</div>
+              <div class="stat-label">Client Ratings</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+       <section class="launchpad-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="launchpad-content">
+                        <div class="launchpad-breadcrumb">
+                            <span>Programs</span>
+                            <span class="breadcrumb-arrows">>>>>></span>
+                        </div>
+                        
+                        <h2 class="launchpad-title">Launchpad</h2>
+                        
+                        <p class="launchpad-description">
+                            For founders and business owners who have a product idea, but don't know how to get it built.
+                        </p>
+                        
+                        <p class="launchpad-details">
+                            Launchpad helps you go from idea to execution—fast. You'll get a clear roadmap, technical validation, and an MVP development strategy designed around real business needs (not just tech buzzwords).
+                        </p>
+                        
+                        <div class="launchpad-target">
+                            <span class="target-arrow">→</span>
+                            <span class="target-text">Perfect for first-time founders, solo entrepreneurs, and growing teams.</span>
+                        </div>
+                        
+                        <div class="launchpad-cta">
+                            <a href="#" class="learn-more-btn">Learn More About Launchpad</a>
+                            <div class="webinar-info">
+                                <span>Attend a 1 Hour Live Webinar and get</span><br>
+                                <span>clarity to your most pressing questions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6">
+                    <div class="launchpad-image">
+                        <img src="/image/launchpad-img1.png"
+                             class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -228,6 +350,11 @@
     <a href="#" class="contact-btn">Contact</a>
   </div>
 
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 

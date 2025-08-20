@@ -58,3 +58,32 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+
+    const images = [
+    "/image/testimonial/testimonial1.png",
+    "/image/testimonial/testimonial2.png",
+    "/image/testimonial/testimonial3.png"
+  ];
+
+  const swiper = new Swiper(".testimonial-swiper", {
+    loop: true,
+    slidesPerView: "auto",
+    speed: 8000,
+  slidesPerView: 1,   // always one slide
+  spaceBetween: 20,    // no gap since only one slide visible
+      autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".fa-arrow-left",
+      prevEl: ".fa-arrow-right",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<img src="' + images[index] + '" class="' + className + '"/>';
+      },
+    },
+  });

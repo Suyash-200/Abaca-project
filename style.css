@@ -11,10 +11,13 @@ body {
 header {
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 nav {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   padding: 1rem;
   display: flex;
@@ -58,6 +61,14 @@ nav img {
 
 .nav-links .nav-item:hover::after {
   width: 100%;
+}
+
+.mobile-menu .nav-item.active {
+    font-weight: 600;
+}
+
+.mobile-menu .nav-item.active::after {
+    width: 100%;
 }
 
 .contact-btn {
@@ -139,6 +150,14 @@ nav img {
 .mobile-menu .nav-item:hover::after {
   width: 100%;
   /* underline not too wide in mobile */
+}
+
+.mobile-menu .nav-item.active {
+    font-weight: 600;
+}
+
+.mobile-menu .nav-item.active::after {
+    width: 100%;
 }
 
 .mobile-menu .contact-btn {
@@ -1228,10 +1247,6 @@ nav img {
 .launchpad-section {
   background-color: #f8f9fa;
   padding: 60px 0;
-}
-
-.launchpad-content {
-  /* padding-right: 2rem; */
 }
 
 .launchpad-breadcrumb {

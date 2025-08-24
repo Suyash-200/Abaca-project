@@ -116,7 +116,6 @@ nav img {
     right: 0;
 }
 
-
 /* Mobile Menu Nav Items with same hover underline style */
 .mobile-menu .nav-item {
     position: relative;
@@ -366,235 +365,501 @@ nav img {
     }
 }
 
-/* program-hero-section */
-.program-hero-section {
-    background: url("/image/program/program-bg.png") center/cover no-repeat;
-    margin: 20px auto;
-    box-sizing: border-box;
+/* Founder Section */
+.founder-section {
+    background: url("/program-page/launchpad-image/question.svg") no-repeat center center;
+    background-color: #fff;
+    background-size: 140px auto;
+    padding: 60px 0;
 }
 
-.porgram-title {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-    color: white;
-    margin-bottom: 2rem;
+/* Founder Heading */
+.founder-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1D1E3C;
 }
 
-.program-text {
+/* Founder Text */
+.founder-text {
     font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-    max-width: 500px;
-    font-weight: 300;
-    color: white;
+    color: #1D1E3C;
+    margin-bottom: 20px;
 }
 
-.consultation-btn {
-    background-color: white;
-    color: #333;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
+/* Video Box */
+.video-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.consultation-btn:hover {
-    background-color: #f8f9fa;
-    color: #333;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.stats-section {
-    background-color: #d62828;
-    color: white;
-    padding: 30px 0;
+.video-box img {
     width: 100%;
+    border-radius: 10px;
 }
 
-.stats-title {
-    font-size: 23px;
-    font-weight: 600;
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px 30px;
+    cursor: pointer;
 }
 
-.stats-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+/* ================== Responsive ================== */
 
-.stats-intro {
-    flex: 1;
-    min-width: 250px;
-    margin-right: 3rem;
-}
-
-.stats-intro h2 {
-    font-size: 2.2rem;
-    font-weight: 300;
-    line-height: 1.3;
-    margin: 0;
-}
-
-.stat-item {
-    border-right: 1px solid #fff;
-}
-
-.stat-item:last-child {
-    border-right: none;
-}
-
-.stat-number {
-    font-size: 23px;
-    font-weight: 600;
-}
-
-.stat-label {
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
+/* Large tablets (<= 992px) */
+@media (max-width: 992px) {
+    .founder-heading {
+        font-size: 1.8rem;
+        text-align: center;
     }
 
-    .stats-container {
+    .founder-text {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .play-btn {
+        width: 25%;
+    }
+}
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+    .founder-section {
+        background-size: 100px auto;
+        padding: 40px 0;
+    }
+
+    .founder-heading {
+        font-size: 1.6rem;
+    }
+
+    .founder-text {
+        font-size: 1rem;
+    }
+
+    .play-btn {
+        width: 22%;
+    }
+}
+
+/* Mobile Landscape (<= 576px) */
+@media (max-width: 576px) {
+    .founder-section {
+        background-size: 80px auto;
+        padding: 30px 0;
+    }
+
+    .founder-heading {
+        font-size: 1.4rem;
+    }
+
+    .founder-text {
+        font-size: 0.95rem;
+    }
+
+    .play-btn {
+        width: 20%;
+    }
+}
+
+/* Small Mobile (<= 400px) */
+@media (max-width: 400px) {
+    .founder-section {
+        background-size: 60px auto;
+        padding: 20px 0;
+    }
+
+    .founder-heading {
+        font-size: 1.2rem;
+    }
+
+    .founder-text {
+        font-size: 0.9rem;
+    }
+
+    .play-btn {
+        width: 18%;
+    }
+}
+
+/* question-section */
+.question-section {
+    padding: 30px 0;
+    background: url("/program-page/thrive-image/question-bg.png") no-repeat center;
+    background-size: cover;
+}
+.question-heading{
+    color: #1D1E3C;
+}
+.quote-box {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.question-badge {
+    background: white;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    color: #333;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 8px;
+    white-space: normal;
+    /* allow wrapping */
+    word-wrap: break-word;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large tablets & small laptops (<=992px) */
+@media (max-width: 992px) {
+    .quote-box {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .question-badge {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Tablets (<=768px) */
+@media (max-width: 768px) {
+    .row.align-items-center {
         flex-direction: column;
         text-align: center;
     }
 
-    .stats-intro {
-        margin-right: 0;
-        margin-bottom: 3rem;
+    .quote-box {
+        margin: 0 auto 25px auto;
+        width: 90%;
     }
 
-    .stats-grid {
-        gap: 2rem;
-        justify-content: center;
+    .question-badge {
+        display: inline-block;
+        margin: 6px;
+        font-size: 0.85rem;
     }
 }
 
+/* Mobile (<=576px) */
 @media (max-width: 576px) {
-    .porgram-title {
-        font-size: 2rem;
+    .quote-box {
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 15px;
     }
 
-    .program-text {
-        font-size: 1.1rem;
-    }
-
-    .businessman-silhouette {
-        opacity: 0.3;
-    }
-
-    .stats-title {
+    .question-badge {
+        display: block;
+        width: 100%;
         text-align: center;
-    }
-
-    .stat-item {
-        border-right: none;
-        padding: 10px 0;
-        text-align: center;
+        margin: 6px auto;
+        font-size: 0.85rem;
     }
 }
 
-/* launchpad-section */
-.launchpad-section {
+/* Small phones (<=400px) */
+@media (max-width: 400px) {
+    .question-section {
+        padding: 40px 15px;
+    }
+
+    .quote-box {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .question-badge {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+
+.truth-section {
     padding: 60px 0;
 }
 
-
-.launchpad-breadcrumb {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
+.truth-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1D1E3C;
 }
 
-.launchpad-breadcrumb span:first-child {
-    color: #666;
+.truth-section p {
     font-size: 1rem;
-    font-weight: 500;
-}
-
-#program-title {
-    color: #1D1E3C;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.launchpad-title {
-    font-size: 32px;
-    font-weight: 600;
     color: #1D1E3C;
 }
 
-.launchpad-description-up {
-    font-size: 22px;
-    color: #666;
-    width: 80%;
+.custom-list {
+    list-style: none;
+    padding: 0;
+    color: #1D1E3C;
 }
 
-.launchpad-description {
-    font-size: 22px;
-    color: #666;
+.custom-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
 }
 
-.launchpad-details {
-    font-size: 1.1rem;
-    color: #000;
-}
-
-.launchpad-target {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-}
-
-.target-arrow {
-    color: #dc3545;
-    font-size: 1.2rem;
+.custom-list li::before {
+    content: "❯";
+    position: absolute;
+    left: 0;
+    color: red;
     font-weight: bold;
-    margin-right: 10px;
-    margin-top: 2px;
 }
 
-.target-text {
-    color: #000;
-    font-size: 1.1rem;
-    line-height: 1.6;
+.launchpad-section {
+    background: #d62828;
+    color: #fff;
+    padding: 50px 20px;
 }
 
-.launchpad-cta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.launchpad-section h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.learn-more-btn {
-    background-color: #DC2E27;
-    color: white;
-    padding: 8px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
+.launchpad-section p {
     font-size: 1rem;
-    transition: all 0.3s ease;
-    white-space: nowrap;
 }
 
-.learn-more-btn:hover {
-    background-color: #c82333;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+/* roadmap-section */
+.roadmap-section {
+  padding: 60px 0;
+  background-color: #E4E4E4;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1D1E3C;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-box img {
+  padding: 15px;
+  border-radius: 12px;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.icon-box h5 {
+  font-weight: 700;
+  color: #1D1E3C;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  color: #1D1E3C;
+  font-size: 15px;
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 26px;
+  }
+  .icon-box img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .icon-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+  }
+  .icon-box {
+    padding: 15px;
+  }
+  .icon-box img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .icon-box h5 {
+    font-size: 16px;
+  }
+  .icon-box p {
+    font-size: 13px;
+  }
+}
+
+/* experience-section */
+.experience-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+.experience-section h2 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #1D1E3C;
+  margin-bottom: 20px;
+}
+.experience-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1D1E3C;
+  margin-bottom: 15px;
+}
+.experience-section img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* keeps centered */
+}
+.custom-list {
+  padding-left: 18px;
+}
+.custom-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1D1E3C;
+}
+
+/* ✅ Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .experience-section h2 {
+    font-size: 24px;
+  }
+  .experience-section p,
+  .custom-list li {
+    font-size: 15px;
+  }
+  .experience-section .row {
+    margin-bottom: 40px;
+  }
+}
+
+/* ✅ Medium devices (≤ 768px) */
+@media (max-width: 768px) {
+  .experience-section h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .experience-section p,
+  .custom-list li {
+    font-size: 15px;
+    text-align: center;
+  }
+  .custom-list {
+    padding-left: 0;
+    list-style-position: inside; /* keeps bullets aligned when centered */
+  }
+  .experience-section img {
+    margin-bottom: 20px;
+  }
+}
+
+/* ✅ Small devices (≤ 576px) */
+@media (max-width: 576px) {
+  .experience-section h2 {
+    font-size: 20px;
+  }
+  .experience-section p,
+  .custom-list li {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Extra small devices (≤ 400px) */
+@media (max-width: 400px) {
+  .experience-section {
+    padding: 40px 0;
+  }
+  .experience-section h2 {
+    font-size: 18px;
+  }
+  .experience-section p,
+  .custom-list li {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .experience-section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* pricing-section */
+.pricing-section {
+    padding: 60px 0;
+    background: url("/program-page/launchpad-image/pricing-bg.png") no-repeat center center;
+background-size: cover;
+  height: 500px;
+  margin-bottom: 13rem;
+}
+
+.price-logo{
+    width: 60px;
+    height: 60px;
+    background: #1D1E3C;
+    border-radius: 50%;
+}
+
+.price-sign{
+    width: 150px;
+}
+.pricing-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-section .price-bg {
+  background: #F3F3F3;
+}
+
+.pricing-title{
+    color: #1D1E3C;
+}
+
+.pricing-para{
+    color: #1D1E3C;
+}
+
+.signature-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .register-btn {
@@ -617,306 +882,112 @@ nav img {
     box-shadow: 0 5px 15px rgba(29, 30, 60, 0.4);
 }
 
-.webinar-info {
-    font-size: 12px;
-    color: #2A254D;
-    line-height: 1.4;
-}
-
-.launchpad-image {
-    text-align: center;
-}
-
-.launchpad-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Already existing styles above remain same */
-
-/* Tablets (≤768px) */
-@media (max-width: 768px) {
-    .launchpad-section {
-        padding: 40px 0;
-    }
-
-    .launchpad-title {
-        font-size: 1.8rem;
-        /* scales better */
-        line-height: 1.3;
-    }
-
-    .launchpad-description {
-        font-size: 1.1rem;
-    }
-
-    .launchpad-details,
-    .target-text {
-        font-size: 1rem;
-    }
-
-    .launchpad-cta {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .learn-more-btn {
-        width: 100%;
-        /* full width on smaller screens */
-        text-align: center;
-    }
-
-    .launchpad-image img {
-        max-width: 90%;
-    }
-}
-
-/* Mobiles (≤576px) */
-@media (max-width: 576px) {
-    .launchpad-section {
-        padding: 30px 15px;
-    }
-
-    .launchpad-breadcrumb {
-        padding-top: 20px;
-    }
-
-    .launchpad-breadcrumb span:first-child {
-        font-size: 0.9rem;
-    }
-
-    #program-title {
-        font-size: 15px;
-    }
-
-    .launchpad-title {
-        font-size: 1.5rem;
-    }
-
-    .launchpad-description {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .launchpad-details,
-    .target-text {
-        font-size: 0.95rem;
-    }
-
-    .webinar-info {
-        font-size: 11px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .launchpad-image img {
-        max-width: 100%;
-    }
-}
-
-/* Extra small devices (≤375px) */
-@media (max-width: 375px) {
-    .launchpad-section {
-        padding: 20px 10px;
-    }
-
-    .launchpad-title {
-        font-size: 1.3rem;
-    }
-
-    .launchpad-description {
-        font-size: 0.9rem;
-    }
-
-    .learn-more-btn {
-        padding: 8px 20px;
-        font-size: 0.9rem;
-    }
-
-    .webinar-info {
-        font-size: 10px;
-    }
-}
-
-/* contact-section */
-.contact-section {
-    padding: 60px 0;
-}
-
-.contact-img {
-    width: 39.7%;
-}
-
-.contact-form {
-    width: 60%;
-    height: 33.9rem;
-    border-radius: 0 15px 15px 0;
-    background-color: #E4E4E4;
-}
-
-.form-title {
-    color: #1D1E3C;
-}
-
-.form-control {
-    border-color: #DCDDDE;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #9E9E9E;
-    font-size: 14px;
-}
-
-.text-muted {
-    color: #9CA3AF !important;
-}
-
-.form-check-label {
-    color: #14161F;
-}
-
-.btn-danger {
-    background-color: #D90805;
-    width: 160px;
-    border: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn-danger:hover {
-    background-color: #c82333;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
-}
-
-
-@media (max-width: 1025px) {
-    .contact-img {
-        width: 47.7%;
-    }
-
-    .contact-form {
-        width: 50%;
-        padding: 60px !important;
-    }
-}
-
-/* Tablets & small desktops (≤ 992px) */
+/* For <= 992px (lg screens down) */
 @media (max-width: 992px) {
-    .contact-section .row {
-        flex-direction: column;
-        /* stack image + form */
-    }
+  .pricing-section {
+    height: auto; /* remove fixed height */
+    padding: 40px 0;
+    margin-bottom: 8rem;
+  }
 
-    .contact-img {
-        width: 100%;
-        height: 250px;
-        /* fixed height */
-    }
+  .pricing-section .row {
+    padding: 20px;
+    border-radius: 12px;
+  }
 
-    .contact-img img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
+  .pricing-section .col-lg-4,
+  .pricing-section .col-lg-8 {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-    .contact-form {
-        width: 100%;
-        border-radius: 0 0 15px 15px;
-        height: auto;
-        padding: 30px !important;
-    }
+  /* .pricing-section img {
+    margin: 0 auto;
+  } */
 }
 
-/* Tablets portrait (≤ 768px) */
+/* For <= 768px (md screens down) */
 @media (max-width: 768px) {
-    .testimonial-section {
-        height: auto;
-    }
+  .pricing-section {
+    margin-bottom: 24rem;
+        height: 40rem;
+  }
 
-    .contact-form {
-        padding: 25px !important;
-    }
+  .pricing-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pricing-section .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+
+  .pricing-section h2.display-5 {
+    font-size: 2rem;
+  }
+
+  .register-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
 }
 
-/* Mobiles (≤ 576px) */
+/* For <= 576px (sm screens down) */
 @media (max-width: 576px) {
+  .pricing-section {
+            /* height: 40rem; */
+        margin-bottom: 27rem;
+  }
 
-    .contact-section {
-        padding: 30px 0;
-    }
+  .pricing-section .col-lg-4 .bg-white {
+    width: 100% !important;
+    padding: 10px;
+  }
 
-    .contact-img {
-        height: 300px;
-        padding-top: 15px !important;
-    }
+  .pricing-section h2.display-5 {
+    font-size: 1.8rem;
+  }
 
-    .contact-img img {
-        width: 100%;
-        object-fit: initial;
-        height: auto;
-    }
+  .pricing-section p,
+  .pricing-section h6,
+  .pricing-section h3 {
+    font-size: 0.95rem;
+  }
 
-    .contact-form {
-        padding: 20px !important;
-    }
+  .register-btn {
+    width: 100%;
+    display: inline-block;
+  }
 
-    .contact-form h3,
-    .contact-form h4 {
-        font-size: 1.2rem;
-    }
-
-    .contact-form p {
-        font-size: 0.9rem;
-    }
-
-    .btn-danger {
-        width: 100%;
-        /* button full width */
-    }
+  /* .pricing-section img {
+    width: 150px;
+  } */
 }
 
-/* Extra small devices (≤ 400px) */
+/* For <= 400px (extra small devices) */
 @media (max-width: 400px) {
+  .pricing-section {
+    margin-bottom: 20rem;
+    /* min-height: 40rem; */
+  }
 
-    .contact-section {
-        padding: 20px 0;
-    }
+  .pricing-section h2.display-5 {
+    font-size: 1.6rem;
+  }
 
-    .contact-img {
-        height: 280px;
-        padding-top: 18px !important;
-    }
+  .register-btn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
 
-    .contact-img img {
-        width: 100%;
-        object-fit: initial;
-        height: auto;
-    }
+  /* .pricing-section img {
+    width: 120px;
+  } */
 
-    .contact-form {
-        padding: 15px !important;
-    }
-
-    .contact-form h3,
-    .contact-form h4 {
-        font-size: 1rem;
-    }
-
-    .contact-form p {
-        font-size: 0.85rem;
-    }
-
-    .form-control {
-        font-size: 0.9rem;
-        padding: 8px 10px;
-    }
-
-    .btn-danger {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
+  .pricing-para {
+    font-size: 0.9rem;
+  }
 }
 
 /* blog-section */
@@ -1175,6 +1246,7 @@ nav img {
 .support-card .btn:hover {
     background: #cc0000;
 }
+
 
 /* Newsletter Section */
 .newsletter-section {

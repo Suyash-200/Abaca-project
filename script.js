@@ -26,64 +26,195 @@ document.addEventListener("DOMContentLoaded", () => {
       productSubmenu.classList.toggle("open");
     });
   }
+
+  // Auto-hide mobile menu when screen reaches 768px or above
+  if (mobileMenu) {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        mobileMenu.classList.remove("active");
+        // Also close any open submenus
+        if (productSubmenu) {
+          productSubmenu.classList.remove("open");
+        }
+      }
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+    
+    // Check on initial load as well
+    handleResize();
+  }
 });
 
+// Initialize Swiper
+new Swiper(".mySwiper", {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 40,
+  speed: 4000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  freeMode: {
+    enabled: true,
+    momentum: false,
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+    },
+    640: {
+      spaceBetween: 30,
+    },
+    1024: {
+      spaceBetween: 40,
+    },
+    1440: {
+      spaceBetween: 60,
+    },
+  },
+});
 
-   // Initialize Swiper
-  new Swiper(".mySwiper", {
-    loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 40,
-    speed: 4000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
+const images = [
+  "/image/testimonial/testimonial1.png",
+  "/image/testimonial/testimonial2.png",
+  "/image/testimonial/testimonial3.png",
+];
+
+const swiper = new Swiper(".testimonial-swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  speed: 8000,
+  slidesPerView: 1, // always one slide
+  spaceBetween: 20, // no gap since only one slide visible
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".fa-arrow-left",
+    prevEl: ".fa-arrow-right",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<img src="' + images[index] + '" class="' + className + '"/>';
     },
-    freeMode: {
-      enabled: true,
-      momentum: false,
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 20,
-      },
-      640: {
-        spaceBetween: 30,
-      },
-      1024: {
-        spaceBetween: 40,
-      },
-      1440: {
-        spaceBetween: 60,
-      },
-    },
+  },
+});
+
+const blogs = [
+  {
+    img: "/Product-page/product-page-image/blog/blog1.png",
+    date: "26 Mar, 2023",
+    title: "The Complete Web Developer Guideline 2023",
+    text: "There are many variations of passages of Lorem Ipsum available..."
+  },
+  {
+    img: "/Product-page/product-page-image/blog/blog2.png",
+    date: "26 Mar, 2023",
+    title: "The Complete Web Developer Guideline 2023",
+    text: "There are many variations of passages of Lorem Ipsum available..."
+  },
+  {
+    img: "/Product-page/product-page-image/blog/blog3.png",
+    date: "26 Mar, 2023",
+    title: "The Complete Web Developer Guideline 2023",
+    text: "There are many variations of passages of Lorem Ipsum available..."
+  },
+  {
+    img: "/Product-page/product-page-image/blog/blog1.png",
+    date: "27 Mar, 2023",
+    title: "Another Web Dev Post",
+    text: "This is another example blog content..."
+  },
+  {
+    img: "/Product-page/product-page-image/blog/blog2.png",
+    date: "28 Mar, 2023",
+    title: "Frontend Best Practices",
+    text: "Some best practices for frontend development..."
+  }
+];
+
+const perPage = 3;
+let currentPage = 1;
+
+function renderBlogs(page) {
+  const container = document.getElementById("blog-list");
+  container.innerHTML = "";
+
+  const start = (page - 1) * perPage;
+  const end = start + perPage;
+  const pageBlogs = blogs.slice(start, end);
+
+  pageBlogs.forEach(blog => {
+    container.innerHTML += `
+      <div class="card blog-card mb-4">
+        <img src="${blog.img}" class="img-fluid" alt="Blog Image">
+        <div class="card-body">
+          <div class="blog-meta">
+            <span class="badge-custom">Development</span>
+            <div class="post-date mb-2"><i class="far fa-clock"></i> ${blog.date}</div>
+          </div>
+          <h4 class="card-title"><strong>${blog.title}</strong></h4>
+          <p>${blog.text}</p>
+          <div class="blog-author">
+            <div class="author-info">
+              <div class="author-icon">👤</div>
+              <div>
+                <p class="author-name">Darrell Steward</p>
+                <p class="author-role">Frontend Developer</p>
+              </div>
+            </div>
+            <a href="/blog/blog-details-page/blog-details-1.html" class="read-more-btn">➝</a>
+          </div>
+        </div>
+      </div>
+    `;
   });
+}
 
-    const images = [
-    "/image/testimonial/testimonial1.png",
-    "/image/testimonial/testimonial2.png",
-    "/image/testimonial/testimonial3.png"
-  ];
+function renderPagination() {
+  const pagination = document.getElementById("pagination");
+  pagination.innerHTML = "";
 
-  const swiper = new Swiper(".testimonial-swiper", {
-    loop: true,
-    slidesPerView: "auto",
-    speed: 8000,
-  slidesPerView: 1,   // always one slide
-  spaceBetween: 20,    // no gap since only one slide visible
-      autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".fa-arrow-left",
-      prevEl: ".fa-arrow-right",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<img src="' + images[index] + '" class="' + className + '"/>';
-      },
-    },
-  });
+  const totalPages = Math.ceil(blogs.length / perPage);
+
+  // Previous Button
+  pagination.innerHTML += `
+    <li class="page-item rounded ${currentPage === 1 ? "disabled" : ""}">
+      <a class="page-link" href="#" onclick="goToPage(${currentPage - 1})"><</a>
+    </li>
+  `;
+
+  // Number Buttons
+  for (let i = 1; i <= totalPages; i++) {
+    pagination.innerHTML += `
+      <li class="page-item rounded ${i === currentPage ? "active" : ""}">
+        <a class="page-link" href="#" onclick="goToPage(${i})">${i}</a>
+      </li>
+    `;
+  }
+
+  // Next Button
+  pagination.innerHTML += `
+    <li class="page-item rounded ${currentPage === totalPages ? "disabled" : ""}">
+      <a class="page-link" href="#" onclick="goToPage(${currentPage + 1})">></a>
+    </li>
+  `;
+}
+
+function goToPage(page) {
+  const totalPages = Math.ceil(blogs.length / perPage);
+  if (page < 1 || page > totalPages) return;
+  currentPage = page;
+  renderBlogs(page);
+  renderPagination();
+}
+
+// Initial Render
+renderBlogs(currentPage);
+renderPagination();

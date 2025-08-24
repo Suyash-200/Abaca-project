@@ -54,9 +54,12 @@ nav img {
   transition: width 0.4s ease-in-out;
 }
 
-.nav-links .nav-item:hover {
-  color: #111;
-  font-weight: 400;
+.nav-links .nav-item.active {
+  font-weight: 600;
+}
+
+.nav-links .nav-item.active::after {
+  width: 100%;
 }
 
 .nav-links .nav-item:hover::after {
@@ -64,11 +67,11 @@ nav img {
 }
 
 .mobile-menu .nav-item.active {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .mobile-menu .nav-item.active::after {
-    width: 100%;
+  width: 100%;
 }
 
 .contact-btn {
@@ -96,7 +99,7 @@ nav img {
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 0;
+  top: 68px;
   right: -100%;
   width: 280px;
   height: 100vh;
@@ -114,6 +117,7 @@ nav img {
 .mobile-menu.active {
   right: 0;
 }
+
 
 /* Mobile Menu Nav Items with same hover underline style */
 .mobile-menu .nav-item {
@@ -153,11 +157,11 @@ nav img {
 }
 
 .mobile-menu .nav-item.active {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .mobile-menu .nav-item.active::after {
-    width: 100%;
+  width: 100%;
 }
 
 .mobile-menu .contact-btn {
@@ -229,7 +233,7 @@ nav img {
   position: absolute;
   top: 30%;
   left: 50%;
-  width: 130%;
+  width: 120%;
   height: 130%;
   transform: translate(-50%, -50%);
   z-index: 1;

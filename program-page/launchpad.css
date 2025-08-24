@@ -9,8 +9,11 @@ body {
 }
 
 header {
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 nav {
@@ -94,7 +97,7 @@ nav img {
 /* Mobile Menu */
 .mobile-menu {
     position: fixed;
-    top: 0;
+    top: 68px;
     right: -100%;
     width: 280px;
     height: 100vh;
@@ -364,7 +367,7 @@ nav img {
 
 /* Founder Section */
 .founder-section {
-    background: url("/program-page/image/question.svg") no-repeat center center;
+    background: url("/program-page/launchpad-image/question.svg") no-repeat center center;
     background-color: #fff;
     background-size: 140px auto;
     padding: 60px 0;
@@ -637,214 +640,236 @@ nav img {
 
 /* roadmap-section */
 .roadmap-section {
-  padding: 60px 0;
-  background-color: #E4E4E4;
+    padding: 60px 0;
+    background-color: #E4E4E4;
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #1D1E3C;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1D1E3C;
 }
 
 .icon-box {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 .icon-box img {
-  padding: 15px;
-  border-radius: 12px;
-  width: 85px;
-  height: 85px;
-  margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
 }
 
 .icon-box h5 {
-  font-weight: 700;
-  color: #1D1E3C;
-  margin-bottom: 10px;
+    font-weight: 700;
+    color: #1D1E3C;
+    margin-bottom: 10px;
 }
 
 .icon-box p {
-  color: #1D1E3C;
-  font-size: 15px;
+    color: #1D1E3C;
+    font-size: 15px;
 }
 
 /* 📱 Responsive tweaks */
 @media (max-width: 992px) {
-  .section-title {
-    font-size: 26px;
-  }
-  .icon-box img {
-    width: 75px;
-    height: 75px;
-  }
+    .section-title {
+        font-size: 26px;
+    }
+
+    .icon-box img {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 24px;
-  }
-  .icon-box p {
-    font-size: 14px;
-  }
+    .section-title {
+        font-size: 24px;
+    }
+
+    .icon-box p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 576px) {
-  .section-title {
-    font-size: 22px;
-  }
-  .icon-box {
-    padding: 15px;
-  }
-  .icon-box img {
-    width: 70px;
-    height: 70px;
-  }
+    .section-title {
+        font-size: 22px;
+    }
+
+    .icon-box {
+        padding: 15px;
+    }
+
+    .icon-box img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 400px) {
-  .section-title {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  .icon-box h5 {
-    font-size: 16px;
-  }
-  .icon-box p {
-    font-size: 13px;
-  }
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .icon-box h5 {
+        font-size: 16px;
+    }
+
+    .icon-box p {
+        font-size: 13px;
+    }
 }
 
 /* experience-section */
 .experience-section {
-  padding: 60px 0;
-  background-color: #fff;
+    padding: 60px 0;
+    background-color: #fff;
 }
+
 .experience-section h2 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #1D1E3C;
-  margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #1D1E3C;
+    margin-bottom: 20px;
 }
+
 .experience-section p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #1D1E3C;
-  margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1D1E3C;
+    margin-bottom: 15px;
 }
+
 .experience-section img {
-  border-radius: 12px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto; /* keeps centered */
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* keeps centered */
 }
+
 .custom-list {
-  padding-left: 18px;
+    padding-left: 18px;
 }
+
 .custom-list li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #1D1E3C;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1D1E3C;
 }
 
 /* ✅ Tablet screens (≤ 992px) */
 @media (max-width: 992px) {
-  .experience-section h2 {
-    font-size: 24px;
-  }
-  .experience-section p,
-  .custom-list li {
-    font-size: 15px;
-  }
-  .experience-section .row {
-    margin-bottom: 40px;
-  }
+    .experience-section h2 {
+        font-size: 24px;
+    }
+
+    .experience-section p,
+    .custom-list li {
+        font-size: 15px;
+    }
+
+    .experience-section .row {
+        margin-bottom: 40px;
+    }
 }
 
 /* ✅ Medium devices (≤ 768px) */
 @media (max-width: 768px) {
-  .experience-section h2 {
-    font-size: 22px;
-    text-align: center;
-  }
-  .experience-section p,
-  .custom-list li {
-    font-size: 15px;
-    text-align: center;
-  }
-  .custom-list {
-    padding-left: 0;
-    list-style-position: inside; /* keeps bullets aligned when centered */
-  }
-  .experience-section img {
-    margin-bottom: 20px;
-  }
+    .experience-section h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .experience-section p,
+    .custom-list li {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .custom-list {
+        padding-left: 0;
+        list-style-position: inside;
+        /* keeps bullets aligned when centered */
+    }
+
+    .experience-section img {
+        margin-bottom: 20px;
+    }
 }
 
 /* ✅ Small devices (≤ 576px) */
 @media (max-width: 576px) {
-  .experience-section h2 {
-    font-size: 20px;
-  }
-  .experience-section p,
-  .custom-list li {
-    font-size: 14px;
-  }
+    .experience-section h2 {
+        font-size: 20px;
+    }
+
+    .experience-section p,
+    .custom-list li {
+        font-size: 14px;
+    }
 }
 
 /* ✅ Extra small devices (≤ 400px) */
 @media (max-width: 400px) {
-  .experience-section {
-    padding: 40px 0;
-  }
-  .experience-section h2 {
-    font-size: 18px;
-  }
-  .experience-section p,
-  .custom-list li {
-    font-size: 13px;
-    line-height: 1.6;
-  }
-  .experience-section img {
-    width: 100%;
-    height: auto;
-  }
+    .experience-section {
+        padding: 40px 0;
+    }
+
+    .experience-section h2 {
+        font-size: 18px;
+    }
+
+    .experience-section p,
+    .custom-list li {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .experience-section img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* pricing-section */
 .pricing-section {
     padding: 60px 0;
-    background: url("/program-page/image/pricing-bg.png") no-repeat center center;
-background-size: cover;
-  height: 200px;
-  margin-bottom: 13rem;
+    background: url("/program-page/launchpad-image/pricing-bg.png") no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 13rem;
 }
 
 .pricing-section .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .pricing-section .row {
-  background: #F3F3F3;
+    background: #F3F3F3;
 }
 
-.pricing-title{
+.pricing-title {
     color: #1D1E3C;
 }
 
-.pricing-para{
+.pricing-para {
     color: #1D1E3C;
 }
 
 .signature-img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .register-btn {
@@ -869,110 +894,111 @@ background-size: cover;
 
 /* For <= 992px (lg screens down) */
 @media (max-width: 992px) {
-  .pricing-section {
-    height: auto; /* remove fixed height */
-    padding: 40px 0;
-    margin-bottom: 8rem;
-  }
+    .pricing-section {
+        height: auto;
+        /* remove fixed height */
+        padding: 40px 0;
+        margin-bottom: 8rem;
+    }
 
-  .pricing-section .row {
-    padding: 20px;
-    border-radius: 12px;
-  }
+    .pricing-section .row {
+        padding: 20px;
+        border-radius: 12px;
+    }
 
-  .pricing-section .col-lg-4,
-  .pricing-section .col-lg-8 {
-    text-align: center;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+    .pricing-section .col-lg-4,
+    .pricing-section .col-lg-8 {
+        text-align: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 
-  .pricing-section img {
-    margin: 0 auto;
-  }
+    .pricing-section img {
+        margin: 0 auto;
+    }
 }
 
 /* For <= 768px (md screens down) */
 @media (max-width: 768px) {
-  .pricing-section {
-    margin-bottom: 24rem;
+    .pricing-section {
+        margin-bottom: 24rem;
         height: 200px;
-  }
+    }
 
-  .pricing-section .row {
-    flex-direction: column;
-    text-align: center;
-  }
+    .pricing-section .row {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .pricing-section .col-lg-4 {
-    margin-bottom: 2rem;
-  }
+    .pricing-section .col-lg-4 {
+        margin-bottom: 2rem;
+    }
 
-  .pricing-section h2.display-5 {
-    font-size: 2rem;
-  }
+    .pricing-section h2.display-5 {
+        font-size: 2rem;
+    }
 
-  .register-btn {
-    padding: 8px 20px;
-    font-size: 0.95rem;
-  }
+    .register-btn {
+        padding: 8px 20px;
+        font-size: 0.95rem;
+    }
 }
 
 /* For <= 576px (sm screens down) */
 @media (max-width: 576px) {
-  .pricing-section {
-            height: 120px;
+    .pricing-section {
+        height: 120px;
         margin-bottom: 27rem;
-  }
+    }
 
-  .pricing-section .col-lg-4 .bg-white {
-    width: 100% !important;
-    padding: 10px;
-  }
+    .pricing-section .col-lg-4 .bg-white {
+        width: 100% !important;
+        padding: 10px;
+    }
 
-  .pricing-section h2.display-5 {
-    font-size: 1.8rem;
-  }
+    .pricing-section h2.display-5 {
+        font-size: 1.8rem;
+    }
 
-  .pricing-section p,
-  .pricing-section h6,
-  .pricing-section h3 {
-    font-size: 0.95rem;
-  }
+    .pricing-section p,
+    .pricing-section h6,
+    .pricing-section h3 {
+        font-size: 0.95rem;
+    }
 
-  .register-btn {
-    width: 100%;
-    display: inline-block;
-  }
+    .register-btn {
+        width: 100%;
+        display: inline-block;
+    }
 
-  .pricing-section img {
-    width: 150px;
-  }
+    .pricing-section img {
+        width: 150px;
+    }
 }
 
 /* For <= 400px (extra small devices) */
 @media (max-width: 400px) {
-  .pricing-section {
-    margin-bottom: 29rem;
+    .pricing-section {
+        margin-bottom: 29rem;
         height: 100px;
-  }
+    }
 
-  .pricing-section h2.display-5 {
-    font-size: 1.6rem;
-  }
+    .pricing-section h2.display-5 {
+        font-size: 1.6rem;
+    }
 
-  .register-btn {
-    padding: 6px 15px;
-    font-size: 0.9rem;
-  }
+    .register-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
 
-  .pricing-section img {
-    width: 120px;
-  }
+    .pricing-section img {
+        width: 120px;
+    }
 
-  .pricing-para {
-    font-size: 0.9rem;
-  }
+    .pricing-para {
+        font-size: 0.9rem;
+    }
 }
 
 /* blog-section */

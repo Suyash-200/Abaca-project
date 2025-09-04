@@ -401,7 +401,7 @@ nav img {
     padding: 15px 0;
     height: 250px;
   }
-  
+
   .hero-bg {
     flex-direction: column;
     align-items: center;
@@ -409,25 +409,25 @@ nav img {
     padding: 3%;
     height: 250px;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 10px;
   }
-  
+
   .hero-content h1 {
     font-size: 7vw;
     line-height: 1.2;
     margin-bottom: 15px;
   }
-  
+
   .para1 {
     font-size: 3.8vw;
     width: 100%;
     margin-top: 10px;
     line-height: 1.4;
   }
-  
+
   .para2 {
     font-size: 3.2vw;
     width: 100%;
@@ -441,7 +441,7 @@ nav img {
     padding: 18px 0;
     height: 280px;
   }
-  
+
   .hero-bg {
     flex-direction: column;
     align-items: center;
@@ -449,25 +449,25 @@ nav img {
     padding: 4%;
     height: 280px;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 15px;
   }
-  
+
   .hero-content h1 {
     font-size: 6.5vw;
     line-height: 1.3;
     margin-bottom: 18px;
   }
-  
+
   .para1 {
     font-size: 3.5vw;
     width: 100%;
     margin-top: 12px;
     line-height: 1.4;
   }
-  
+
   .para2 {
     font-size: 3vw;
     width: 100%;
@@ -481,7 +481,7 @@ nav img {
     padding: 20px 0;
     height: 320px;
   }
-  
+
   .hero-bg {
     flex-direction: column;
     align-items: center;
@@ -489,25 +489,25 @@ nav img {
     padding: 4%;
     height: 320px;
   }
-  
+
   .hero-content {
     max-width: 95%;
     padding: 0 20px;
   }
-  
+
   .hero-content h1 {
     font-size: 6vw;
     line-height: 1.3;
     margin-bottom: 20px;
   }
-  
+
   .para1 {
     font-size: 3.2vw;
     width: 100%;
     margin-top: 15px;
     line-height: 1.5;
   }
-  
+
   .para2 {
     font-size: 2.8vw;
     width: 100%;
@@ -521,7 +521,7 @@ nav img {
     padding: 25px 0;
     height: 360px;
   }
-  
+
   .hero-bg {
     flex-direction: column;
     align-items: center;
@@ -529,25 +529,25 @@ nav img {
     padding: 5%;
     height: 360px;
   }
-  
+
   .hero-content {
     max-width: 90%;
     padding: 0 25px;
   }
-  
+
   .hero-content h1 {
     font-size: 5vw;
     line-height: 1.3;
     margin-bottom: 22px;
   }
-  
+
   .para1 {
     font-size: 2.8vw;
     width: 100%;
     margin-top: 18px;
     line-height: 1.5;
   }
-  
+
   .para2 {
     font-size: 2.4vw;
     width: 100%;
@@ -561,7 +561,7 @@ nav img {
     padding: 30px 0;
     height: 400px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -569,25 +569,25 @@ nav img {
     padding: 5%;
     height: 400px;
   }
-  
+
   .hero-content {
     max-width: 85%;
     padding: 0 30px;
   }
-  
+
   .hero-content h1 {
     font-size: 4.2vw;
     line-height: 1.3;
     margin-bottom: 25px;
   }
-  
+
   .para1 {
     font-size: 2.2vw;
     width: 100%;
     margin-top: 20px;
     line-height: 1.5;
   }
-  
+
   .para2 {
     font-size: 1.8vw;
     width: 100%;
@@ -601,7 +601,7 @@ nav img {
     padding: 35px 0;
     height: 420px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -609,25 +609,25 @@ nav img {
     height: 420px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 80%;
     padding: 0 35px;
   }
-  
+
   .hero-content h1 {
     font-size: 3.8vw;
     line-height: 1.2;
     margin-bottom: 28px;
   }
-  
+
   .para1 {
     font-size: 1.9vw;
     width: 100%;
     margin-top: 22px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 1.5vw;
     width: 100%;
@@ -641,7 +641,7 @@ nav img {
     padding: 40px 0;
     height: 450px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -650,25 +650,25 @@ nav img {
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 40px;
   }
-  
+
   .hero-content h1 {
     font-size: 48px;
     line-height: 1.2;
     margin-bottom: 30px;
   }
-  
+
   .para1 {
     font-size: 22px;
     width: 100%;
     margin-top: 25px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 16px;
     width: 70%;
@@ -682,7 +682,7 @@ nav img {
     padding: 50px 0;
     height: 480px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -691,25 +691,25 @@ nav img {
     height: 440px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 50px;
   }
-  
+
   .hero-content h1 {
     font-size: 52px;
     line-height: 1.2;
     margin-bottom: 32px;
   }
-  
+
   .para1 {
     font-size: 24px;
     width: 100%;
     margin-top: 28px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 17px;
     width: 65%;
@@ -723,7 +723,7 @@ nav img {
     padding: 60px 0;
     height: 520px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -731,25 +731,25 @@ nav img {
     height: 510px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 60px;
   }
-  
+
   .hero-content h1 {
     font-size: 56px;
     line-height: 1.2;
     margin-bottom: 35px;
   }
-  
+
   .para1 {
     font-size: 26px;
     width: 100%;
     margin-top: 30px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 18px;
     width: 60%;
@@ -763,7 +763,7 @@ nav img {
     padding: 70px 0;
     height: 560px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -771,25 +771,25 @@ nav img {
     height: 580px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 100%;
     padding: 0 70px;
   }
-  
+
   .hero-content h1 {
     font-size: 60px;
     line-height: 1.2;
     margin-bottom: 38px;
   }
-  
+
   .para1 {
     font-size: 28px;
     width: 100%;
     margin-top: 32px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 19px;
     width: 55%;
@@ -803,7 +803,7 @@ nav img {
     padding: 80px 0;
     height: 600px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -811,25 +811,25 @@ nav img {
     height: 670px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 58%;
     padding: 0 80px;
   }
-  
+
   .hero-content h1 {
     font-size: 64px;
     line-height: 1.2;
     margin-bottom: 40px;
   }
-  
+
   .para1 {
     font-size: 30px;
     width: 100%;
     margin-top: 35px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 20px;
     width: 50%;
@@ -843,7 +843,7 @@ nav img {
     padding: 90px 0;
     height: 650px;
   }
-  
+
   .hero-bg {
     justify-content: center;
     align-items: center;
@@ -851,25 +851,25 @@ nav img {
     height: 680px;
     margin: 0 auto;
   }
-  
+
   .hero-content {
     max-width: 55%;
     padding: 0 90px;
   }
-  
+
   .hero-content h1 {
     font-size: 68px;
     line-height: 1.2;
     margin-bottom: 42px;
   }
-  
+
   .para1 {
     font-size: 32px;
     width: 100%;
     margin-top: 38px;
     line-height: 1.6;
   }
-  
+
   .para2 {
     font-size: 22px;
     width: 48%;
@@ -2486,7 +2486,7 @@ nav img {
 
   .image-container img {
     width: 100%;
-    max-width:720px;
+    max-width: 720px;
     height: auto;
   }
 }
@@ -2806,7 +2806,7 @@ nav img {
     align-items: center;
   }
 
- .image-container img {
+  .image-container img {
     width: 100%;
     max-width: 900px;
     height: auto;
@@ -3693,7 +3693,7 @@ nav img {
   }
 }
 
-/* contact-section */
+/*============ contact-section ================*/
 .contact-section {
   padding: 60px 0;
 }
@@ -4311,21 +4311,6 @@ nav img {
   }
 }
 
-/* Custom utilities */
-@media (max-width: 992px) {
-  .contact-img img {
-    object-fit: cover;
-    height: 510px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-img img {
-    object-fit: initial;
-    height: auto;
-  }
-}
 
 /* clients-section  */
 .clients-section {
@@ -5391,6 +5376,10 @@ footer p {
     padding-bottom: 55px;
   }
 
+  .footer-container {
+    max-width: 1200px;
+  }
+
   .footer-logo {
     margin-bottom: 40px;
   }
@@ -5444,6 +5433,10 @@ footer p {
   footer {
     padding-top: 90px;
     padding-bottom: 60px;
+  }
+
+  .footer-container {
+    max-width: 1320px;
   }
 
   .footer-logo {
@@ -5501,6 +5494,10 @@ footer p {
     padding-bottom: 65px;
   }
 
+  .footer-container {
+    max-width: 1480px;
+  }
+
   .footer-logo {
     margin-bottom: 50px;
   }
@@ -5554,6 +5551,10 @@ footer p {
   footer {
     padding-top: 100px;
     padding-bottom: 70px;
+  }
+
+  .footer-container {
+    max-width: 1600px;
   }
 
   .footer-logo {
@@ -5611,6 +5612,10 @@ footer p {
     padding-bottom: 75px;
   }
 
+  .footer-container {
+    max-width: 1800px;
+  }
+
   .footer-logo {
     margin-bottom: 60px;
   }
@@ -5664,6 +5669,10 @@ footer p {
   footer {
     padding-top: 110px;
     padding-bottom: 80px;
+  }
+
+  .footer-container {
+    max-width: 2000px;
   }
 
   .footer-logo {

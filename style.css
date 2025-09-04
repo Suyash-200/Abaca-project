@@ -6096,6 +6096,10 @@ footer p {
     padding-bottom: 55px;
   }
 
+  .footer-container {
+    max-width: 1200px;
+  }
+
   .footer-logo {
     margin-bottom: 40px;
   }
@@ -6149,6 +6153,10 @@ footer p {
   footer {
     padding-top: 90px;
     padding-bottom: 60px;
+  }
+
+  .footer-container {
+    max-width: 1320px;
   }
 
   .footer-logo {
@@ -6206,6 +6214,10 @@ footer p {
     padding-bottom: 65px;
   }
 
+  .footer-container {
+    max-width: 1480px;
+  }
+
   .footer-logo {
     margin-bottom: 50px;
   }
@@ -6259,6 +6271,10 @@ footer p {
   footer {
     padding-top: 100px;
     padding-bottom: 70px;
+  }
+
+  .footer-container {
+    max-width: 1600px;
   }
 
   .footer-logo {
@@ -6316,6 +6332,10 @@ footer p {
     padding-bottom: 75px;
   }
 
+  .footer-container {
+    max-width: 1800px;
+  }
+
   .footer-logo {
     margin-bottom: 60px;
   }
@@ -6369,6 +6389,10 @@ footer p {
   footer {
     padding-top: 110px;
     padding-bottom: 80px;
+  }
+
+  .footer-container {
+    max-width: 2000px;
   }
 
   .footer-logo {

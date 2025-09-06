@@ -2298,682 +2298,830 @@ nav img {
 
 /* Program Hero Section - Base Styles (Mobile First) */
 .program-hero-section {
-  background: url("/image/program/program-bg.png") center/cover no-repeat;
-  margin: 15px auto;
-  box-sizing: border-box;
+    background: url("/image/program/program-bg.png") center/cover no-repeat;
+    margin: 15px auto;
+    box-sizing: border-box;
 }
 
 .program-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .stats-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .program-content {
-  padding: 20px 15px;
+    padding: 20px 15px;
 }
 
 .porgram-title {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: white;
-  margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1.5rem;
 }
 
 .program-text {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  max-width: 100%;
-  font-weight: 300;
-  color: white;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    font-weight: 300;
+    color: white;
 }
 
 .consultation-btn {
-  background-color: white;
-  color: #333;
-  border: none;
-  padding: 10px 24px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-  width: 100%;
-  text-align: center;
-  max-width: 280px;
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    max-width: 280px;
 }
 
 .consultation-btn:hover {
-  background-color: #f8f9fa;
-  color: #333;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #f8f9fa;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .stats-section {
-  background-color: #d62828;
-  color: white;
-  padding: 25px 0;
-  width: 100%;
+    background-color: #d62828;
+    color: white;
+    padding: 25px 0;
+    width: 100%;
 }
 
 .stats-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .stat-item {
-  text-align: center;
-  padding: 15px 10px;
-  border-right: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 15px 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .stat-number {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .stat-label {
-  font-size: 0.85rem;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-/* Very Small Phones (≥ 320px) */
-@media (min-width: 320px) {
-  .program-hero-section {
-    margin: 12px auto;
-  }
-
-  .program-content {
-    padding: 18px 12px;
-    text-align: center;
-  }
-
-  .porgram-title {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .program-text {
-    font-size: 0.9rem;
-    margin-bottom: 1.8rem;
-  }
-
-  .consultation-btn {
-    padding: 9px 20px;
     font-size: 0.85rem;
-  }
-
-  .stats-section {
-    padding: 22px 0;
-  }
-
-  .stats-title {
-    font-size: 1rem;
-    margin-bottom: 18px;
-  }
-
-  .stat-number {
-    font-size: 1.4rem;
-  }
-
-  .stat-label {
-    font-size: 0.8rem;
-  }
+    font-weight: 400;
+    opacity: 0.9;
 }
 
-/* Small Phones (≥ 480px) */
-@media (min-width: 480px) {
-  .program-hero-section {
-    margin: 16px auto;
-  }
+/* Extremely small screens (≤320px) */
+@media (max-width: 320px) {
+    .program-hero-section {
+        margin: 10px auto;
+    }
 
-  .program-content {
-    padding: 25px 20px;
-  }
+    .program-container {
+        padding: 0 10px;
+    }
 
-  .porgram-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
+    .stats-container {
+        padding: 0 10px;
+    }
 
-  .program-text {
-    font-size: 1rem;
-    line-height: 1.55;
-    margin-bottom: 2.2rem;
-    max-width: 400px;
-  }
+    .program-content {
+        padding: 15px 10px;
+        text-align: center;
+    }
 
-  .consultation-btn {
-    padding: 11px 26px;
-    font-size: 0.95rem;
-    width: auto;
-  }
+    .porgram-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
 
-  .stats-section {
-    padding: 28px 0;
-  }
+    .program-text {
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
 
-  .stats-title {
-    font-size: 1.2rem;
-    margin-bottom: 22px;
-  }
+    .consultation-btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        width: 100%;
+        max-width: none;
+        border-radius: 4px;
+    }
 
-  .stat-item {
-    padding: 18px 15px;
-  }
+    .stats-section {
+        padding: 20px 0;
+    }
 
-  .stat-number {
-    font-size: 1.6rem;
-  }
+    .stats-title {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
 
-  .stat-label {
-    font-size: 0.9rem;
-  }
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
-/* Small Tablets (≥ 576px) */
-@media (min-width: 576px) {
-  .program-hero-section {
-    margin: 18px auto;
-  }
+/* Small mobile (≥321px and ≤480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+    .program-hero-section {
+        margin: 12px auto;
+    }
 
-  .program-content {
-    padding: 30px 25px;
-    text-align: justify;
-  }
+    .program-container {
+        padding: 0 12px;
+    }
 
-  .porgram-title {
-    font-size: 2.2rem;
-    margin-bottom: 1.6rem;
-  }
+    .stats-container {
+        padding: 0 12px;
+    }
 
-  .program-text {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    margin-bottom: 2.4rem;
-    max-width: 450px;
-  }
+    .program-content {
+        padding: 18px 12px;
+        text-align: center;
+    }
 
-  .consultation-btn {
-    padding: 12px 28px;
-    font-size: 1rem;
-  }
+    .porgram-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
 
-  .stats-section {
-    padding: 30px 0;
-  }
+    .program-text {
+        font-size: 0.85rem;
+        margin-bottom: 1.8rem;
+    }
 
-  .stats-title {
-    font-size: 1.3rem;
-    text-align: left;
-    margin-bottom: 0;
-  }
+    .consultation-btn {
+        padding: 9px 18px;
+        font-size: 0.8rem;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 4px;
+    }
 
-  .stat-item {
-    text-align: center;
-    padding: 20px 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: none;
-  }
+    .stats-section {
+        padding: 22px 0;
+    }
 
-  .stat-item:last-child {
-    border-right: none;
-  }
+    .stats-title {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
 
-  .stat-number {
-    font-size: 1.7rem;
-  }
+    .stat-number {
+        font-size: 1.35rem;
+    }
 
-  .stat-label {
-    font-size: 0.92rem;
-  }
+    .stat-label {
+        font-size: 0.78rem;
+    }
+
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
-/* Tablets (≥ 768px) */
-@media (min-width: 768px) {
-  .program-hero-section {
-    margin: 20px auto;
-  }
+/* Mobile landscape (≥481px and ≤576px) */
+@media (min-width: 481px) and (max-width: 576px) {
+    .program-hero-section {
+        margin: 15px auto;
+    }
 
-  .program-content {
-    padding: 40px 30px;
-  }
+    .program-container {
+        padding: 0 15px;
+    }
 
-  .porgram-title {
-    font-size: 2.6rem;
-    margin-bottom: 1.8rem;
-  }
+    .stats-container {
+        padding: 0 15px;
+    }
 
-  .program-text {
-    font-size: 1.1rem;
-    margin-bottom: 2.6rem;
-    max-width: 480px;
-  }
+    .program-content {
+        padding: 22px 15px;
+    }
 
-  .consultation-btn {
-    padding: 13px 32px;
-    font-size: 1.05rem;
-  }
+    .porgram-title {
+        font-size: 1.9rem;
+        margin-bottom: 1.4rem;
+    }
 
-  .stats-section {
-    padding: 32px 0;
-  }
+    .program-text {
+        font-size: 0.9rem;
+        line-height: 1.52;
+        margin-bottom: 2rem;
+        max-width: 350px;
+    }
 
-  .stats-title {
-    font-size: 1.4rem;
-  }
+    .consultation-btn {
+        padding: 10px 22px;
+        font-size: 0.85rem;
+        width: 210px;
+        border-radius: 5px;
+    }
 
-  .stat-item {
-    padding: 0 15px;
-  }
+    .stats-section {
+        padding: 25px 0;
+    }
 
-  .stat-number {
-    font-size: 1.8rem;
-  }
+    .stats-title {
+        font-size: 1.05rem;
+        margin-bottom: 18px;
+    }
 
-  .stat-label {
-    font-size: 0.95rem;
-  }
+    .stat-item {
+        padding: 16px 12px;
+    }
+
+    .stat-number {
+        font-size: 1.45rem;
+    }
+
+    .stat-label {
+        font-size: 0.82rem;
+    }
+
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
-/* Medium Devices (≥ 992px) */
-@media (min-width: 992px) {
-  .program-hero-section {
-    margin: 22px auto;
-  }
+/* Small tablets / landscape phones (≥577px and ≤768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .program-hero-section {
+        margin: 18px auto;
+    }
 
-  .program-content {
-    padding: 50px 35px;
-  }
+    .program-container {
+        padding: 0 18px;
+    }
 
-  .porgram-title {
-    font-size: 2.9rem;
-    margin-bottom: 2rem;
-  }
+    .stats-container {
+        padding: 0 18px;
+    }
 
-  .program-text {
-    font-size: 1.15rem;
-    margin-bottom: 2.8rem;
-    max-width: 500px;
-  }
+    .program-content {
+        padding: 28px 20px;
+        text-align: justify;
+    }
 
-  .consultation-btn {
-    padding: 14px 35px;
-    font-size: 1.1rem;
-  }
+    .porgram-title {
+        font-size: 2.1rem;
+        margin-bottom: 1.6rem;
+    }
 
-  .stats-section {
-    padding: 35px 0;
-  }
+    .program-text {
+        font-size: 0.98rem;
+        line-height: 1.58;
+        margin-bottom: 2.2rem;
+        max-width: 420px;
+    }
 
-  .stats-title {
-    font-size: 1.5rem;
-  }
+    .consultation-btn {
+        padding: 11px 25px;
+        font-size: 0.9rem;
+        width: 230px;
+        border-radius: 5px;
+    }
 
-  .stat-number {
-    font-size: 1.9rem;
-  }
+    .stats-section {
+        padding: 20px 0;
+        height: 160px;
+    }
 
-  .stat-label {
-    font-size: 1rem;
-  }
+    .stats-title {
+        font-size: 1.15rem;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 18px 12px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: none;
+    }
+
+    .stat-item:last-child {
+        border-right: none;
+    }
+
+    .stat-number {
+        font-size: 1.55rem;
+    }
+
+    .stat-label {
+        font-size: 0.88rem;
+    }
+
 }
 
-/* Large Tablets/Desktop (≥ 1024px) */
-@media (min-width: 1024px) {
-  .program-hero-section {
-    margin: 24px auto;
-  }
+/* Tablet landscape (≥769px and ≤992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .program-hero-section {
+        margin: 20px auto;
+    }
 
-  .program-container {
-    max-width: 1200px;
-    padding: 0 20px;
-  }
+    .program-container {
+        padding: 0 20px;
+    }
 
-  .stats-container {
-    max-width: 1200px;
-    padding: 0 20px;
-  }
+    .stats-container {
+        padding: 0 20px;
+    }
 
-  .program-content {
-    padding: 55px 40px;
-  }
+    .program-content {
+        padding: 35px 25px;
+    }
 
-  .porgram-title {
-    font-size: 3.1rem;
-    margin-bottom: 2.2rem;
-  }
+    .porgram-title {
+        font-size: 2.4rem;
+        margin-bottom: 1.7rem;
+    }
 
-  .program-text {
-    font-size: 1.18rem;
-    line-height: 1.65;
-    margin-bottom: 3rem;
-  }
+    .program-text {
+        font-size: 1.05rem;
+        margin-bottom: 2.4rem;
+        max-width: 460px;
+    }
 
-  .consultation-btn {
-    padding: 15px 38px;
-    font-size: 1.02rem;
-  }
+    .consultation-btn {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        width: 241px;
+        border-radius: 6px;
+    }
 
-  .stats-section {
-    padding: 38px 0;
-  }
+    .stats-section {
+        padding: 30px 0;
+    }
 
-  .stats-title {
-    font-size: 1.6rem;
-  }
+    .stats-title {
+        font-size: 1.25rem;
+    }
 
-  .stat-number {
-    font-size: 2rem;
-  }
+    .stat-item {
+        padding: 0 14px;
+    }
 
-  .stat-label {
-    font-size: 1.02rem;
-  }
+    .stat-number {
+        font-size: 1.65rem;
+    }
+
+    .stat-label {
+        font-size: 0.92rem;
+    }
 }
 
-/* Large Desktop (≥ 1280px) */
-@media (min-width: 1280px) {
-  .program-hero-section {
-    margin: 26px auto;
-  }
+/* iPad Pro, small laptop (≥993px and ≤1024px) */
+@media (min-width: 993px) and (max-width: 1024px) {
+    .program-hero-section {
+        margin: 22px auto;
+    }
 
-  .program-container {
-    max-width: 1320px;
-    padding: 0 25px;
-  }
+    .program-container {
+        padding: 0 22px;
+        margin: 0 auto;
+    }
 
-  .stats-container {
-    max-width: 1320px;
-    padding: 0 25px;
-  }
+    .stats-container {
+        margin: 0 auto;
+        padding: 0 22px;
+    }
 
-  .program-content {
-    padding: 60px 45px;
-  }
+    .program-content {
+        padding: 42px 28px;
+    }
 
-  .porgram-title {
-    font-size: 3.3rem;
-    margin-bottom: 2.4rem;
-  }
+    .porgram-title {
+        font-size: 2.7rem;
+        margin-bottom: 1.9rem;
+    }
 
-  .program-text {
-    font-size: 1.2rem;
-    margin-bottom: 3.2rem;
-  }
+    .program-text {
+        font-size: 1.1rem;
+        margin-bottom: 2.6rem;
+        max-width: 480px;
+    }
 
-  .consultation-btn {
-    padding: 16px 40px;
-    font-size: 16px;
-  }
+    .consultation-btn {
+        padding: 13px 30px;
+        font-size: 1rem;
+        width: 254px;
+        border-radius: 6px;
+    }
 
-  .stats-section {
-    padding: 40px 0;
-  }
+    .stats-section {
+        padding: 32px 0;
+    }
 
-  .stats-title {
-    font-size: 1.7rem;
-  }
+    .stats-title {
+        font-size: 1.35rem;
+    }
 
-  .stat-item {
-    padding: 0 20px;
-  }
+    .stat-number {
+        font-size: 1.75rem;
+    }
 
-  .stat-number {
-    font-size: 2.1rem;
-  }
-
-  .stat-label {
-    font-size: 1.05rem;
-  }
+    .stat-label {
+        font-size: 0.96rem;
+    }
 }
 
-/* Extra Large Desktop (≥ 1440px) */
-@media (min-width: 1440px) {
-  .program-hero-section {
-    margin: 28px auto;
-  }
+/* HD laptop (≥1025px and ≤1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .program-hero-section {
+        margin: 24px auto;
+    }
 
-  .program-container {
-    max-width: 1480px;
-    padding: 0 30px;
-  }
+    .program-container {
+        max-width: 1200px;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
 
-  .stats-container {
-    max-width: 1480px;
-    padding: 0 30px;
-  }
+    .stats-container {
+        max-width: 1200px;
+        padding: 0 25px;
+        margin: 0 auto;
+    }
 
-  .program-content {
-    padding: 65px 50px;
-  }
+    .program-content {
+        padding: 48px 32px;
+    }
 
-  .porgram-title {
-    font-size: 3.5rem;
-    margin-bottom: 2.6rem;
-  }
+    .porgram-title {
+        font-size: 2.9rem;
+        margin-bottom: 2.1rem;
+    }
 
-  .program-text {
-    font-size: 1.25rem;
-    line-height: 1.7;
-    margin-bottom: 3.4rem;
-  }
+    .program-text {
+        font-size: 1.12rem;
+        margin-bottom: 2.8rem;
+        max-width: 500px;
+    }
 
-  .consultation-btn {
-    padding: 17px 42px;
-    font-size: 0.98rem;
-  }
+    .consultation-btn {
+        padding: 14px 32px;
+        font-size: 1.05rem;
+        width: 270px;
+        border-radius: 6px;
+    }
 
-  .stats-section {
-    padding: 42px 0;
-  }
+    .stats-section {
+        padding: 35px 0;
+    }
 
-  .stats-title {
-    font-size: 1.8rem;
-  }
+    .stats-title {
+        font-size: 1.45rem;
+    }
 
-  .stat-number {
-    font-size: 2.2rem;
-  }
+    .stat-number {
+        font-size: 1.85rem;
+    }
 
-  .stat-label {
-    font-size: 1.08rem;
-  }
+    .stat-label {
+        font-size: 0.98rem;
+    }
 }
 
-/* Wide Desktop (≥ 1680px) */
-@media (min-width: 1680px) {
-  .program-hero-section {
-    margin: 30px auto;
-  }
+/* Large desktop (≥1281px and ≤1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .program-hero-section {
+        margin: 26px auto;
+    }
 
-  .program-container {
-    max-width: 1600px;
-    padding: 0 35px;
-  }
+    .program-container {
+        max-width: 1320px;
+        padding: 0 28px;
+    }
 
-  .stats-container {
-    max-width: 1600px;
-    padding: 0 35px;
-  }
+    .stats-container {
+        max-width: 1320px;
+        padding: 0 28px;
+        margin: 0 auto;
+    }
 
-  .program-content {
-    padding: 70px 55px;
-  }
+    .program-content {
+        padding: 55px 38px;
+    }
 
-  .porgram-title {
-    font-size: 3.7rem;
-    margin-bottom: 2.8rem;
-  }
+    .porgram-title {
+        font-size: 3.2rem;
+        margin-bottom: 2.3rem;
+    }
 
-  .program-text {
-    font-size: 1.3rem;
-    margin-bottom: 3.6rem;
-    max-width: 550px;
-  }
+    .program-text {
+        font-size: 1.16rem;
+        margin-bottom: 3rem;
+        max-width: 520px;
+    }
 
-  .consultation-btn {
-    padding: 18px 45px;
-    font-size: 0.9rem;
-  }
+    .consultation-btn {
+        padding: 15px 35px;
+        font-size: 1.08rem;
+        width: 280px;
+        border-radius: 7px;
+    }
 
-  .stats-section {
-    padding: 45px 0;
-  }
+    .stats-section {
+        padding: 38px 0;
+    }
 
-  .stats-title {
-    font-size: 1.9rem;
-  }
+    .stats-title {
+        font-size: 1.55rem;
+    }
 
-  .stat-item {
-    padding: 0 25px;
-  }
+    .stat-item {
+        padding: 0 18px;
+    }
 
-  .stat-number {
-    font-size: 2.3rem;
-  }
+    .stat-number {
+        font-size: 1.95rem;
+    }
 
-  .stat-label {
-    font-size: 1.1rem;
-  }
+    .stat-label {
+        font-size: 1.02rem;
+    }
 }
 
-/* Full HD (≥ 1920px) */
-@media (min-width: 1920px) {
-  .program-hero-section {
-    margin: 35px auto;
-  }
+/* Ultra-wide (≥1441px and ≤1680px) */
+@media (min-width: 1441px) and (max-width: 1680px) {
+    .program-hero-section {
+        margin: 28px auto;
+    }
 
-  .program-container {
-    max-width: 1800px;
-    padding: 0 40px;
-  }
+    .program-container {
+        max-width: 1480px;
+        padding: 0 32px;
+    }
 
-  .stats-container {
-    max-width: 1800px;
-    padding: 0 40px;
-  }
+    .stats-container {
+        max-width: 1480px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
 
-  .program-content {
-    padding: 80px 65px;
-  }
+    .program-content {
+        padding: 62px 42px;
+    }
 
-  .porgram-title {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-  }
+    .porgram-title {
+        font-size: 3.4rem;
+        margin-bottom: 2.5rem;
+    }
 
-  .program-text {
-    font-size: 1.35rem;
-    line-height: 1.75;
-    margin-bottom: 3.8rem;
-    max-width: 600px;
-  }
+    .program-text {
+        font-size: 1.22rem;
+        line-height: 1.68;
+        margin-bottom: 3.2rem;
+        max-width: 540px;
+    }
 
-  .consultation-btn {
-    padding: 19px 48px;
-    font-size: 0.85rem;
-  }
+    .consultation-btn {
+        padding: 16px 38px;
+        font-size: 1.12rem;
+        max-width: 294px;
+        border-radius: 7px;
+    }
 
-  .stats-section {
-    padding: 50px 0;
-  }
+    .stats-section {
+        padding: 42px 0;
+    }
 
-  .stats-title {
-    font-size: 2rem;
-  }
+    .stats-title {
+        font-size: 1.65rem;
+    }
 
-  .stat-item {
-    padding: 0 30px;
-  }
+    .stat-item {
+        padding: 0 22px;
+    }
 
-  .stat-number {
-    font-size: 2.5rem;
-  }
+    .stat-number {
+        font-size: 2.05rem;
+    }
 
-  .stat-label {
-    font-size: 1.15rem;
-  }
+    .stat-label {
+        font-size: 1.06rem;
+    }
 }
 
-/* Ultra-wide (≥ 2200px) */
-@media (min-width: 2200px) {
-  .program-hero-section {
-    margin: 40px auto;
-  }
+/* Full HD (≥1681px and ≤1920px) */
+@media (min-width: 1681px) and (max-width: 1920px) {
+    .program-hero-section {
+        margin: 32px auto;
+    }
 
-  .program-container {
-    max-width: 2000px;
-    padding: 0 50px;
-  }
+    .program-container {
+        max-width: 1600px;
+        padding: 0 35px;
+    }
 
-  .stats-container {
-    max-width: 2000px;
-    padding: 0 50px;
-  }
+    .stats-container {
+        max-width: 1600px;
+        padding: 0 35px;
+        margin: 0 auto;
+    }
 
-  .program-content {
-    padding: 90px 75px;
-  }
+    .program-content {
+        padding: 68px 48px;
+    }
 
-  .porgram-title {
-    font-size: 4.5rem;
-    margin-bottom: 3.5rem;
-  }
+    .porgram-title {
+        font-size: 3.6rem;
+        margin-bottom: 2.7rem;
+    }
 
-  .program-text {
-    font-size: 1.45rem;
-    line-height: 1.8;
-    margin-bottom: 4.2rem;
-    max-width: 650px;
-  }
+    .program-text {
+        font-size: 1.28rem;
+        line-height: 1.72;
+        margin-bottom: 3.4rem;
+        max-width: 560px;
+    }
 
-  .consultation-btn {
-    padding: 22px 55px;
-    font-size: 0.8rem;
-    border-radius: 8px;
-  }
+    .consultation-btn {
+        padding: 17px 40px;
+        font-size: 1.15rem;
+        max-width: 303px;
+        border-radius: 8px;
+    }
 
-  .stats-section {
-    padding: 55px 0;
-  }
+    .stats-section {
+        padding: 45px 0;
+    }
 
-  .stats-title {
-    font-size: 2.2rem;
-  }
+    .stats-title {
+        font-size: 1.75rem;
+    }
 
-  .stat-item {
-    padding: 0 35px;
-  }
+    .stat-item {
+        padding: 0 25px;
+    }
 
-  .stat-number {
-    font-size: 2.8rem;
-  }
+    .stat-number {
+        font-size: 2.15rem;
+    }
 
-  .stat-label {
-    font-size: 1.25rem;
-  }
+    .stat-label {
+        font-size: 1.1rem;
+    }
+}
+
+/* Super Ultra-wide (≥1921px and ≤2200px) */
+@media (min-width: 1921px) and (max-width: 2200px) {
+    .program-hero-section {
+        margin: 36px auto;
+    }
+
+    .program-container {
+        max-width: 1800px;
+        padding: 0 40px;
+    }
+
+    .stats-container {
+        max-width: 1800px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+
+    .program-content {
+        padding: 75px 55px;
+    }
+
+    .porgram-title {
+        font-size: 3.8rem;
+        margin-bottom: 2.9rem;
+    }
+
+    .program-text {
+        font-size: 1.32rem;
+        line-height: 1.76;
+        margin-bottom: 3.6rem;
+        max-width: 580px;
+    }
+
+    .consultation-btn {
+        padding: 18px 42px;
+        font-size: 1.18rem;
+        max-width: 313px;
+        border-radius: 8px;
+    }
+
+    .stats-section {
+        padding: 48px 0;
+    }
+
+    .stats-title {
+        font-size: 1.85rem;
+    }
+
+    .stat-item {
+        padding: 0 28px;
+    }
+
+    .stat-number {
+        font-size: 2.25rem;
+    }
+
+    .stat-label {
+        font-size: 1.15rem;
+    }
+}
+
+/* Extra Ultra-wide (≥2201px) */
+@media (min-width: 2201px) {
+    .program-hero-section {
+        margin: 40px auto;
+    }
+
+    .program-container {
+        max-width: 2000px;
+        padding: 0 45px;
+    }
+
+    .stats-container {
+        max-width: 2000px;
+        padding: 0 45px;
+        margin: 0 auto;
+    }
+
+    .program-content {
+        padding: 82px 62px;
+    }
+
+    .porgram-title {
+        font-size: 4.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .program-text {
+        font-size: 1.38rem;
+        line-height: 1.8;
+        margin-bottom: 3.8rem;
+        max-width: 620px;
+    }
+
+    .consultation-btn {
+        padding: 20px 45px;
+        font-size: 1.22rem;
+        max-width: 327px;
+        border-radius: 9px;
+    }
+
+    .stats-section {
+        padding: 52px 0;
+    }
+
+    .stats-title {
+        font-size: 1.95rem;
+    }
+
+    .stat-item {
+        padding: 0 32px;
+    }
+
+    .stat-number {
+        font-size: 2.4rem;
+    }
+
+    .stat-label {
+        font-size: 1.2rem;
+    }
 }
 
 /* launchpad-section */
